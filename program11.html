@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration Form</title>
+  <style>
+    .error {color: red; font-size: 0.9em;}
+  </style>
+</head>
+<body>
+  <h1>Register for Event</h1>
+  <form id="regForm">
+    <label>Name: <input type="text" name="name"></label><span class="error" id="nameErr"></span><br>
+    <label>Email: <input type="email" name="email"></label><span class="error" id="emailErr"></span><br>
+    <label>Event:
+      <select name="event">
+        <option value="">Select</option>
+        <option value="Tech Conference">Tech Conference</option>
+        <option value="Music Fest">Music Fest</option>
+      </select>
+    </label><span class="error" id="eventErr"></span><br>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="program11.js"></script>
+</body>
+</html>
